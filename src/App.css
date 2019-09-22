@@ -28,3 +28,6 @@ div.col {
   width: 90vw;   /* Occupy the 90% of the screen width */
   max-width: 90vw;
 } 
+.modal-xl{
+  width: 100px;
+}

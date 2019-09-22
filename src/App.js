@@ -19,7 +19,8 @@ export default class Example extends React.Component {
   }
   render() {
     return (
-      <div>
+    <div>
+{ /* columns starts here */ }
         <Navbar color="faded" light expand="sm">
           <NavbarBrand href="/">UrbanForest</NavbarBrand>
           <NavbarToggler/>
@@ -42,24 +43,27 @@ export default class Example extends React.Component {
                 <NavLink>Components</NavLink>
               </NavItem>
               <NavItem>
+              <NavLink onClick={this.toggle}>Modal view</NavLink>
+              </NavItem>
+              <NavItem>
                 <Button color="primary" size="md" onClick={this.clickhandler}>Process</Button>
-                <Button color="primary" size="md" onClick={this.toggle}>Modal</Button>
               </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
+{ /* columns starts here */ }
         <Row>
           <Col md="2" style={{padding:1}}>
-          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",height:"400px"}}></div>
+          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",height:"700px"}}></div>
           </Col>
           <Col md="10" style={{padding:1}}>
-          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",height:"400px"}}>
+          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",height:"700px"}}>
           </div>
           </Col>
         </Row>
-
-        <Modal isOpen={this.state.modal} toggle={this.toggle} backdrop={this.state.backdrop} size="lg">
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+{ /* Modal starts here */ }
+        <Modal isOpen={this.state.modal} toggle={this.toggle} backdrop={this.state.backdrop} size="xl" style={{maxWidth: '1600px', width: '90%'}}>
+          <ModalHeader toggle={this.toggle}>Modal Title</ModalHeader>
           <ModalBody>
           <Row>
           <Col md="2" style={{padding:1}}>
@@ -72,7 +76,7 @@ export default class Example extends React.Component {
         </Row>
           </ModalBody>
         </Modal>
-
+{ /* Modal ends here */ }
       </div>
     );
   }
