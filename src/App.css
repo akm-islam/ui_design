@@ -20,3 +20,11 @@
 .App-link {
   color: #09d3ac;
 }
+div.col {
+  padding: 0;
+  margin: 0;
+}
+.my-modal {
+  width: 90vw;   /* Occupy the 90% of the screen width */
+  max-width: 90vw;
+} 
