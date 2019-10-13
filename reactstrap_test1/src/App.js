@@ -1,5 +1,8 @@
 import React from 'react';
 import Lineto from "./components/lineto_test";
+import Cline from "./components/crazyLine";
+//import Bar from "./bar";
+import Bar from "./components/line";
 import {Button,Row,Col,Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,UncontrolledDropdown,DropdownToggle,DropdownMenu,DropdownItem,Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 export default class Example extends React.Component {
   constructor(props) {
@@ -53,10 +56,10 @@ export default class Example extends React.Component {
         </Navbar>
 { /* columns starts here */ }
         <Row>
-          <Col md="2" style={{padding:1}}>
+          <Col md="2" >
           <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",height:"700px"}}></div>
           </Col>
-          <Col md="10" style={{padding:1}}>
+          <Col md="10" >
           <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",height:"700px"}}>
           </div>
           </Col>
@@ -66,11 +69,29 @@ export default class Example extends React.Component {
           <ModalHeader toggle={this.toggle}>Modal Title</ModalHeader>
           <ModalBody>
           <Row>
-          <Col md="2" style={{padding:1}}>
-          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",height:"400px"}}></div>
+          <Col md="2" >
+          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%"}}></div>
           </Col>
-          <Col md="10" style={{padding:1}}>
-          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",height:"400px"}}>
+          <Col md="10" >
+          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%"}}>
+          <Row>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+          </Row>
+          <Row>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+          </Row>
+          <Row>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+          </Row>
           </div>
           </Col>
         </Row>
