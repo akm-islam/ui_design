@@ -2,11 +2,11 @@ import React from 'react';
 import {Line} from 'react-chartjs-2';
 
 const data = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ['fJanuary', 'Ffebruary', 'fMarch', 'fApril', 'fMay', 'fJune', 'fJuly','January', 'February', 'March', 'April', 'May', 'June', 'July','January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
     {
       fill: true,
-      lineTension: 0.1,
+      lineTension: 0.2,
       backgroundColor: 'rgba(75,192,192,0.4)',
       borderColor: 'rgba(75,192,192,1)',
       borderCapStyle: 'butt',
@@ -22,7 +22,7 @@ const data = {
       pointHoverBorderWidth: 2,
       pointRadius: 1,
       pointHitRadius: 10,
-      data: [.015, .59, .080, .81, .56, .35, .40]
+      data: [.015, 0, .080, .2, .56, .35, .01,.015, .59, .080, .81, .56, .35, .40,.015, .59, .080, .81, .56, .35, .40]
     }
   ]
 };
@@ -37,8 +37,33 @@ export default class App extends React.Component {
         width={100}
         height={50} 
         options={{
-          maintainAspectRatio: true
-        }}
+          onResize:null,
+          responsive:true,
+          maintainAspectRatio: true,
+          legend:{
+            display:false,
+          },
+          title:{
+            display:true,
+            text:"Attribute 1",
+            
+          },
+    scales: {
+        xAxes: [{
+            gridLines: {
+                display:false
+            },
+            display:false
+        }],
+        yAxes: [{
+            gridLines: {
+                display:false
+            },
+            display:false   
+        }]
+    },  
+        }
+        }
         />
       </div>
     );

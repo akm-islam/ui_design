@@ -72,9 +72,11 @@ export default class Example extends React.Component {
           <Col md="2" >
           <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%"}}></div>
           </Col>
-          <Col md="10" >
-          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%"}}>
+          <Col md="10">
+          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",marginTop:10,border:"0px solid grey",padding:2}}>
           <Row>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
             <Col><Bar></Bar></Col>
             <Col><Bar></Bar></Col>
             <Col><Bar></Bar></Col>
@@ -85,14 +87,30 @@ export default class Example extends React.Component {
             <Col><Bar></Bar></Col>
             <Col><Bar></Bar></Col>
             <Col><Bar></Bar></Col>
-          </Row>
-          <Row>
             <Col><Bar></Bar></Col>
             <Col><Bar></Bar></Col>
-            <Col><Bar></Bar></Col>
-            <Col><Bar></Bar></Col>
-          </Row>
+          </Row>          
           </div>
+{ /* Modal starts here */ }
+          <div style={{backgroundColor:"rgb(224,224,224,.3)",width:"100%",marginTop:25,border:"0px solid grey",padding:2}}>
+          <Row>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+          </Row>
+          <Row>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+            <Col><Bar></Bar></Col>
+          </Row>          
+          </div>
+
           </Col>
         </Row>
           </ModalBody>
